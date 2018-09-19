@@ -63,14 +63,14 @@ Instructions and code for setting up a simple iOS Mobile Device Management (MDM)
     ---
 
  5. Extract MDM private key and MDM Vendor Certificate
-    Open terminal and change the directory to the MDM directory, which you created in Step 1.1. Also, make sure at this stage that the MDM directory contains the following 4 files -
+    Open terminal and change the directory to the MDM directory, which you created in Step 1. Also, make sure at this stage that the MDM directory contains the following 4 files -
  
     ---
     ![Before Step 5 Files](images/BeforeStep5Files.png)
     ---
 
     * **Extract private key using the following command:**
-    If you've added a password to `private.p12` file during export in step 1.3 you need to enter the same import password in this command. Also you need to enter the PEM pass phrase. This pass phrase will be requires in next command.
+    If you've added a password to `private.p12` file during export in step 3 you need to enter the same import password in this command. Also you need to enter the PEM pass phrase. This pass phrase will be requires in next command.
 
     `openssl pkcs12 -in private.p12 -nocerts -out key.pem`
 
@@ -80,7 +80,7 @@ Instructions and code for setting up a simple iOS Mobile Device Management (MDM)
     `openssl rsa -in key.pem out private.key`
 
     * **Extract certificate using the following command:**
-    Again, if you've added any password in `private.p12` file during export in step 1.3 you need to enter same import password in this command.
+    Again, if you've added any password in `private.p12` file during export in step 3 you need to enter same import password in this command.
 
     `openssl pkcs12 -in private.p12 -clcerts -nokeys -out cert.pem`
 
