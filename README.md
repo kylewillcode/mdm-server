@@ -153,7 +153,7 @@ Instructions and code for setting up a simple iOS Mobile Device Management (MDM)
 
 10. Create Enroll.mobileconfig
     * Open the [Apple Configurator 2](https://itunes.apple.com/in/app/apple-configurator-2/id1037126344?mt=12), click File option in menu bar, and then click the New Profile.
-    * In the General category, pick a name to identify the cert. For Identifier, use the `com.apple.mgmt.External.hexstuffhere` that you copied down in step 1.8.
+    * In the General category, pick a name to identify the cert. For Identifier, use the `com.apple.mgmt.External.hexstuffhere` that you copied down in step 8.
     * In the Certificates category, click configure and find your `scripts/identity.p12` file generated in step 9. For password, we either use the PEM password or the export password.
     
     ---
