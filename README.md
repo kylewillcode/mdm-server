@@ -71,7 +71,7 @@ Instructions and code for setting up a simple iOS Mobile Device Management (MDM)
     ---
 
     * **Extract private key using the following command:**
-    If you've added a password to `private.p12` file during export in step 3 you need to enter the same import password in this command. Also you need to enter the PEM pass phrase. This pass phrase will be requires in next command.
+    If you've added a password to `private.p12` file during export in step 3 you need to enter the same import password in this command. Also you need to enter the PEM pass phrase. This pass phrase will be required in next command.
 
     `openssl pkcs12 -in private.p12 -nocerts -out key.pem`
 
