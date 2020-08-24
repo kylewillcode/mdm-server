@@ -64,7 +64,7 @@ Instructions and code for setting up a simple iOS Mobile Device Management (MDM)
     ---
 
  5. Extract MDM private key and MDM Vendor Certificate
-    Open terminal and change the directory to the MDM directory, which you created in Step 1. Also, make sure at this stage that the MDM directory contains the following 4 files -
+    * Open terminal and change the directory to the MDM directory, which you created in Step 1. Also, make sure at this stage that the MDM directory contains the following 4 files -
  
     ---
     ![Before Step 5 Files](images/BeforeStep5Files.png)
